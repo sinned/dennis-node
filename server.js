@@ -1,7 +1,12 @@
-var http = require("http");
+var express = require('express');
 
-http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello Zach World");
-  response.end();
-}).listen(80);
+var app = express.createServer(express.logger());
+
+app.get('/', function(request, response) {
+  response.send('Hello Dennis World!');
+});
+
+var port = process.env.PORT || 8888;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});

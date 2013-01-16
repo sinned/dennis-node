@@ -1,25 +1,11 @@
 {
-	"name": "dennis-node",
-	"version": "0.0.2",
-	"dependencies": {
-		"mongodb": ">= 0.9.6-7",
-		"mongoose": "*",
-		"crypto": "*",
-		"path": "*",
-		"htmlparser" : "*",
-		"jsdom": "*",
-		"xmlhttprequest": "*",
-		"express": "2.5.x",
-		"superagent": "*",
-		"mocha": "*"
-	},
-	"scripts": {
-		"test-tap": "mocha -R tap",
-		"test": "mocha --reporter list --reporter spec",
-		"test2": "mocha --reporter list"
-	},
-	"engines": {
-		"node": "0.8.x"
-	}
+  "name": "dennis",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
 }
-
